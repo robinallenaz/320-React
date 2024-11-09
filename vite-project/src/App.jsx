@@ -1,20 +1,18 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import PerScholasLogo from /components/PerScholasLogo.jsx";
-
-//Per Scholas component (usually defined in a separate file)
-function PerScholasLogo() {
-  return (
-    <img src="" alt="Per Scholas Logo"/>
-  )
-}
-
-
+import Header from './components/Header.jsx'
+import SearchBar from './components/SearchBar.jsx'
+import EmployeeList from './components/EmployeeList.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <PerScholasLogo/>
+      <Header />
+      <SearchBar />
+      <EmployeeList />
     </>
   )
 }
